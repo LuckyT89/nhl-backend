@@ -106,5 +106,24 @@ ducksPlayers.each do |player|
 end
 
 
+coyotesPlayers = []
+CSV.foreach("2-coyotes.csv") do |row|
+    coyotesPlayers << row
+end
+
+coyotesPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 2
+    )
+end
+
+
 
 
