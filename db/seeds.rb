@@ -447,3 +447,184 @@ rangersPlayers.each do |player|
 end
 
 
+senatorsPlayers = []
+CSV.foreach("21-senators.csv") do |row|
+    senatorsPlayers << row
+end
+senatorsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 21
+    )
+end
+
+
+flyersPlayers = []
+CSV.foreach("22-flyers.csv") do |row|
+    flyersPlayers << row
+end
+flyersPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 22
+    )
+end
+
+
+penguinsPlayers = []
+CSV.foreach("23-penguins.csv") do |row|
+    penguinsPlayers << row
+end
+penguinsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 23
+    )
+end
+
+
+sharksPlayers = []
+CSV.foreach("24-sharks.csv") do |row|
+    sharksPlayers << row
+end
+sharksPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 24
+    )
+end
+
+
+bluesPlayers = []
+CSV.foreach("25-blues.csv") do |row|
+    bluesPlayers << row
+end
+bluesPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 25
+    )
+end
+
+
+lightningPlayers = []
+CSV.foreach("26-lightning.csv") do |row|
+    lightningPlayers << row
+end
+lightningPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 26
+    )
+end
+
+
+mapleleafPlayers = []
+CSV.foreach("27-mapleleafs.csv") do |row|
+    mapleleafPlayers << row
+end
+mapleleafPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 27
+    )
+end
+
+
+canucksPlayers = []
+CSV.foreach("28-canucks.csv") do |row|
+    canucksPlayers << row
+end
+canucksPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 28
+    )
+end
+
+
+goldenknightsPlayers = []
+CSV.foreach("29-goldenknights.csv") do |row|
+    goldenknightsPlayers << row
+end
+goldenknightsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 29
+    )
+end
+
+
+capitalsPlayers = []
+CSV.foreach("30-capitals.csv") do |row|
+    capitalsPlayers << row
+end
+capitalsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 30
+    )
+end
+
+
+
