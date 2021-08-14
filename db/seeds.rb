@@ -91,7 +91,6 @@ ducksPlayers = []
 CSV.foreach("1-ducks.csv") do |row|
     ducksPlayers << row
 end
-
 ducksPlayers.each do |player|
     Player.create(
         number: player[0],
@@ -110,7 +109,6 @@ coyotesPlayers = []
 CSV.foreach("2-coyotes.csv") do |row|
     coyotesPlayers << row
 end
-
 coyotesPlayers.each do |player|
     Player.create(
         number: player[0],
@@ -125,5 +123,327 @@ coyotesPlayers.each do |player|
 end
 
 
+bruinsPlayers = []
+CSV.foreach("3-bruins.csv") do |row|
+    bruinsPlayers << row
+end
+bruinsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 3
+    )
+end
+
+
+sabresPlayers = []
+CSV.foreach("4-sabres.csv") do |row|
+    sabresPlayers << row
+end
+sabresPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 4
+    )
+end
+
+
+flamesPlayers = []
+CSV.foreach("5-flames.csv") do |row|
+    flamesPlayers << row
+end
+flamesPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 5
+    )
+end
+
+
+hurricanesPlayers = []
+CSV.foreach("6-hurricanes.csv") do |row|
+    hurricanesPlayers << row
+end
+hurricanesPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 6
+    )
+end
+
+
+blackhawkPlayers = []
+CSV.foreach("7-blackhawks.csv") do |row|
+    blackhawkPlayers << row
+end
+blackhawkPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 7
+    )
+end
+
+
+avalanchePlayers = []
+CSV.foreach("8-avalanche.csv") do |row|
+    avalanchePlayers << row
+end
+avalanchePlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 8
+    )
+end
+
+
+bluejacketsPlayers = []
+CSV.foreach("9-bluejackets.csv") do |row|
+    bluejacketsPlayers << row
+end
+bluejacketsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 9
+    )
+end
+
+
+starsPlayers = []
+CSV.foreach("10-stars.csv") do |row|
+    starsPlayers << row
+end
+starsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 10
+    )
+end
+
+
+redwingsPlayers = []
+CSV.foreach("11-redwings.csv") do |row|
+    redwingsPlayers << row
+end
+redwingsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 11
+    )
+end
+
+
+oilersPlayers = []
+CSV.foreach("12-oilers.csv") do |row|
+    oilersPlayers << row
+end
+oilersPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 12
+    )
+end
+
+
+panthersPlayers = []
+CSV.foreach("13-panthers.csv") do |row|
+    panthersPlayers << row
+end
+panthersPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 13
+    )
+end
+
+
+kingsPlayers = []
+CSV.foreach("14-kings.csv") do |row|
+    kingsPlayers << row
+end
+kingsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 14
+    )
+end
+
+
+wildPlayers = []
+CSV.foreach("15-wild.csv") do |row|
+    wildPlayers << row
+end
+wildPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 15
+    )
+end
+
+
+canadiensPlayers = []
+CSV.foreach("16-canadiens.csv") do |row|
+    canadiensPlayers << row
+end
+canadiensPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 16
+    )
+end
+
+
+predatorsPlayers = []
+CSV.foreach("17-predators.csv") do |row|
+    predatorsPlayers << row
+end
+predatorsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 17
+    )
+end
+
+
+devilsPlayers = []
+CSV.foreach("18-devils.csv") do |row|
+    devilsPlayers << row
+end
+devilsPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 18
+    )
+end
+
+
+islandersPlayers = []
+CSV.foreach("19-islanders.csv") do |row|
+    islandersPlayers << row
+end
+islandersPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 19
+    )
+end
+
+
+rangersPlayers = []
+CSV.foreach("20-rangers.csv") do |row|
+    rangersPlayers << row
+end
+rangersPlayers.each do |player|
+    Player.create(
+        number: player[0],
+        name: updateName(player[1]),
+        position: player[2],
+        age: player[3],
+        height: updateHeight(player[4]),
+        weight: player[5],
+        image_url: player[6],
+        team_id: 20
+    )
+end
 
 
