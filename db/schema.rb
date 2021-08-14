@@ -13,8 +13,10 @@
 ActiveRecord::Schema.define(version: 2021_08_07_134411) do
 
   create_table "players", force: :cascade do |t|
-    t.string "name"
     t.integer "number"
+    t.string "name"
+    t.string "position"
+    t.integer "age"
     t.string "height"
     t.integer "weight"
     t.string "image_url"
